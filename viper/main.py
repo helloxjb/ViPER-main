@@ -126,7 +126,7 @@ def run(cfg):
             if cfg['TRAINING']['use_wandb']:
                 # initialize wandb
                 # os.environ["WANDB_MODE"] = "offline"
-                os.environ["WANDB_API_KEY"] = "74df061318462c67243e9451dcfb38d4481869e0"
+                os.environ["WANDB_API_KEY"] = ""
                 # name
                 wandb.init(name=f"{dataname}_{split_name}_split_{item}",
                            project='Visual Prompt Tuning', config=cfg)
